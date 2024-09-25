@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tsukimi%20Rounded">
+
+    {% if title %}
+        <title>Book Recommendation - {{ title }}</title>
+    {% else %}
+        <title>Book Recommendation</title>
+    {% endif %}
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home')}}">HOME</a></li>
+                <li><a href="{{ url_for('recommend')}}">RECOMMENDATION</a></li>
+                <li><a href="{{ url_for('popular')}}">POPULAR BOOKS</a></li>
+            </ul>
+        </nav>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

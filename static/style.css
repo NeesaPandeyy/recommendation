@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+/* body, html {
+    width: 100%;
+    height: 100%;
+
+} */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('book.jpg');
+    background-size: cover;
+    /* background-repeat: */
+    background-color: rgb(88, 62, 62);
+    background-blend-mode: overlay;
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    margin-right: 45px;
+    align-items: center;
+    height: 10%;
+    font-weight: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 8px 12px;
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: rgb(7, 5, 5);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 230px;
+    align-items: center;
+    height: 90%;
+    text-align: center;
+    color: rgb(246, 235, 235);
+    
+    
+
+}
+
+.banner h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    letter-spacing: 6px;
+    word-spacing: 16px;
+
+
+}
+.banner h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    letter-spacing: 3px;
+    
+    
+}
+
+
+/* .content-title input[type=text] {
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: rgb(88, 62, 62);
+    margin-bottom: 10px;
+
+} */
+.container1{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(81, 55, 55);
+
+    padding: 20px;
+    border-radius: 20px;
+    }
+.fullcontent{
+    background-image: url('book.jpg');
+    background-repeat:repeat;
+    background-size:contain;
+    background-color: rgb(88, 62, 62);
+    background-blend-mode: overlay;
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #6a4a53;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-img-top {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+.heading{
+   padding-bottom: 10px;
+   color:rgb(236, 223, 223) 
+}
